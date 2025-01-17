@@ -251,7 +251,7 @@ header .header__nav ul li:hover {
   .banner .banner__text{
     order: 2;
   }
-  .banner .banner__text h1{
+  .banner .banner__text h6{
     font-size: 3rem;
     text-align: center;
   }
@@ -262,7 +262,7 @@ header .header__nav ul li:hover {
 
   }
   .banner img {
-    .width: 20rem;
+    width: 20rem;
     margin: 0 auto;
   }
 }
@@ -278,4 +278,83 @@ color: #ffffff;
 }
 .btn.bg--primary{
   background: #ffa700;
+}
+
+/* .about */
+.about{
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  background: #ffffff;
+}
+ .about .about__wrapper{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items:center;
+  gap:5rem;
+ }
+ .about .about__text h3 {
+  font-size: 3rem;
+  font-weight: bold 800;
+  color:#ffa700;
+  line-height: 1;
+}
+.about .about__text p{
+  margin-bottom: 4rem;
+  text-align: justify;
+}
+/* SECTION3 */
+.aboutme {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  background: #ffffff;
+}
+.aboutme .aboutme__wrapper{
+  display: flex;
+flex-direction: reverse;
+  align-items: center;
+  gap: 5rem;
+}
+.aboutme .aboutme__wrapper > :nth-child(1) {
+  order: 2;
+}
+.aboutme .aboutme__wrapper > :nth-child(2) {
+  order: 1;
+}
+.aboutme .aboutme__text h3{
+   font-size: 5rem;
+  font-weight: 700;
+  color: #ffa700;
+  line-height: 1;
+}
+.aboutme .aboutme__text p {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+/* Mobileview */
+@media screen and (max-width:500px){
+  .aboutme{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .aboutme .aboutme__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .aboutme .aboutme__text {
+    order: 2;
+  }
+  .aboutme .aboutme__text h3 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .aboutme .aboutme__text a {
+    display: flex;
+    width: fit-content;
+    margin: 0% auto;
+  }
+  .aboutme img {
+    width:20rem;
+    margin: 0 auto;
+  }
 }
